@@ -1,0 +1,115 @@
+
+.bodyBgK{
+position: fixed;
+inset: 0px;
+opacity: .8;
+z-index: -1;
+}
+
+.bodyBgK img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.MianDetDiv{
+ width: max-content;
+position: relative;
+top: 100px;
+left: 50px;
+}
+
+.MianDetDiv img{
+    max-width: 600px;
+    min-width: 200px;
+    width: 35vw;
+}
+
+.buttonDiv{
+width: max-content;
+display: flex;
+margin-top: 50px;
+}
+
+.PlayButton{
+font-size: 15px;
+margin: 0px 22px 0px 0px;
+padding: 0px 24px;
+height: 56px;
+border-radius: 4px;
+cursor: pointer;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+letter-spacing: 1.8px;
+text-align: center;
+text-transform: uppercase;
+border: none;
+color: rgb(0, 0, 0);
+}
+
+.PlayButton:hover{
+background-color: darkgray;
+}
+
+.PlayButton i{
+font-size: 25px;
+margin-right:5px;
+}
+
+.TrailerButton{
+    font-size: 15px;
+    margin: 0px 22px 0px 0px;
+    padding: 0px 24px;
+    height: 56px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    color: rgb(255, 250, 250);
+    background-color: rgba(0, 0, 0, 0.371);
+    border: 1px solid white;
+}
+
+.TrailerButton:hover{
+    background-color: darkgray;
+    }
+
+.TrailerButton i{
+    font-size: 25px;
+    margin-right:5px;
+}
+.iconDetDiv{
+margin-top: 9px;
+}
+
+.iconDetDiv i{
+font-size: 40px;
+background-color: rgb(255, 255, 255);
+color: rgba(0, 0, 0, 0.964);
+border: 1px solid white;
+border-radius: 60px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+.paraDetDiv{
+margin-top: 20px;
+width: 880px;
+}
+.paraDetDiv h4{
+margin-bottom: 30px;
+}
+.paraDetDiv p{
+font-size: 20px;
+line-height: 1.4;
+}

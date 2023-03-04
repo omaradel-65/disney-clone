@@ -1,0 +1,113 @@
+
+
+.slider__img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: var(--main-shadow);
+    display: block;
+    margin: 0 auto;
+}
+        .slider__textImage{
+          position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+         z-index: 1;
+          opacity: 0;
+          transform: translateX(26px);
+          transition: transform .94s cubic-bezier(.25,.46,.45,.94) .94s;
+        }
+
+        .slick-slide:not(.slick-cloned).slick-active .slider__textImage {
+          opacity: 1;
+          transform: translateX(0);
+          transition: transform .7s cubic-bezier(.25,.46,.45,.94) .7s,opacity 1.45s cubic-bezier(.25,.46,.45,.94) .42s;
+      }
+
+        .slick-slide[aria-hidden=true] .slider__imgContainer:before {
+          content: "";
+          background: linear-gradient(#30323e,#1e1f2a) 0 0/cover;
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          opacity: .6;
+          border-radius: 4px;
+          z-index: 2;
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+    }
+
+    .slick-dots li, .slick-dots li button {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+    }
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots {
+    display: block;
+    list-style: none;
+    position: absolute;
+    text-align: right;
+    bottom: 20px;
+    margin: 0;
+    padding: 0;
+    right: 8px;
+    width: 100%;
+}
+
+ .slick-dots li button:before {
+    color: #969eab;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+ .slick-dots li.slick-active button:before {
+    color: #f9f9f9;
+}
+
+.slick-list {
+    overflow: initial;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 668px){
+    .slick-list{
+        overflow: hidden;
+    }
+    }
